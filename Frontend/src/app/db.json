@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": "e7d7",
+      "username": "dispenser",
+      "password": "123",
+      "role": "dispenser"
+    },
+    {
+      "id": "e7d7",
+      "username": "admin",
+      "password": "123",
+      "role": "admin"
+    }
+  ],
+
+  "medicines": [
+    {
+      "id": 1,
+      "name": "Aspirin",
+      "price": 5.99,
+      "category": "Pain Relief"
+    },
+    {
+      "id": 2,
+      "name": "Ibuprofen",
+      "price": 7.49,
+      "category": "Pain Relief"
+    },
+    {
+      "id": 3,
+      "name": "Amoxicillin",
+      "price": 12.99,
+      "category": "Antibiotics"
+    },
+    {
+      "id": 4,
+      "name": "Loratadine",
+      "price": 9.99,
+      "category": "Antihistamines"
+    },
+    {
+      "id": 5,
+      "name": "Omeprazole",
+      "price": 15.99,
+      "category": "Digestive Health"
+    },
+    {
+      "id": 6,
+      "name": "Acetaminophen",
+      "price": 6.99,
+      "category": "Pain Relief"
+    },
+    {
+      "id": 7,
+      "name": "Simvastatin",
+      "price": 18.49,
+      "category": "Cholesterol Management"
+    },
+    {
+      "id": 8,
+      "name": "Ciprofloxacin",
+      "price": 22.99,
+      "category": "Antibiotics"
+    },
+    {
+      "id": 9,
+      "name": "Diphenhydramine",
+      "price": 8.79,
+      "category": "Allergy Relief"
+    },
+    {
+      "id": 10,
+      "name": "Metformin",
+      "price": 11.99,
+      "category": "Diabetes Management"
+    }
+  ]
+}
