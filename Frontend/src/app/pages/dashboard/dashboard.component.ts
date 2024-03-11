@@ -1,11 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import {SidebarComponent} from "../../components/sidebar/sidebar.component";
-import {CourseComponent} from "../../components/course/course.component";
-import {ReadingComponent} from "../../components/reading/reading.component";
 import {SearchComponent} from "../../components/search/search.component";
-import {PremiumComponentComponent} from "../../components/premium-component/premium-component.component";
 import { DashboardTableComponent } from '../../components/dashboard-table/dashboard-table.component';
-import {NgFor,NgForOf} from "@angular/common";
+import {NgForOf} from "@angular/common";
 import { DrugsInterface } from '../../interface/drugs-interface';
 import { DrugsServiceService } from '../../services/drugs-service.service';
 @Component({
@@ -13,10 +10,7 @@ import { DrugsServiceService } from '../../services/drugs-service.service';
   standalone: true,
   imports: [
     SidebarComponent,
-    CourseComponent,
-    ReadingComponent,
     SearchComponent,
-    PremiumComponentComponent,
     DashboardTableComponent,
     NgForOf
   ],
@@ -27,7 +21,7 @@ export class DashboardComponent implements OnInit {
   productsList: DrugsInterface [] = []
 
 
-  constructor(private ds:DrugsServiceService){} 
+  constructor(private ds:DrugsServiceService){}
 
 ngOnInit(): void {
   this.ds.getMedicine().subscribe((response)=>{
