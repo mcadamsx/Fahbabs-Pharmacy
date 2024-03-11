@@ -1,5 +1,5 @@
 
-<div class="my-14 w-full ">
+<div class="my-14 w-full">
   <div>
     <form (ngSubmit)="loginUser()" [formGroup]="loginForm">
       <div class="relative mb-5">
@@ -11,9 +11,12 @@
           </svg>
 
         </div>
-        <input type="text" id="default-search" formControlName="username"
-               class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-               placeholder="Your email" required/>
+        <input 
+            type="text" id="default-search" formControlName="username"
+            class="block w-full p-4 ps-10 text-sm text-heading border border-slate-300 rounded-lg cursor-pointer hover:border-secondary bg-accent focus:border-primary focus-within:outline-none"
+            placeholder="Your email" 
+            required
+        />
       </div>
       <div class="relative mb-5">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -27,13 +30,14 @@
               stroke="#ADB0CD" stroke-width="2.30303" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <input type="password"formControlName="password"
-               class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-               placeholder="password" required/>
+        <input 
+          type="password"formControlName="password"
+          class="block w-full p-4 ps-10 text-sm text-heading border border-slate-300 rounded-lg cursor-pointer hover:border-secondary bg-accent focus:border-primary focus:outline-none"
+          placeholder="password" 
+          required
+        />
       </div>
-      <button class="w-full bg-cyan-500 p-3 rounded-lg text-gray-50">Log In</button>
-
-
+      <button class="w-full bg-primary p-3 rounded-[6px] text-white font-medium tracking-wider border-none hover:bg-hover">Login</button>
     </form>
   </div>
 
