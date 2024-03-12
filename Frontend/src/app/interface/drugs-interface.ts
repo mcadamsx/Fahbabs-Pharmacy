@@ -1,8 +1,10 @@
 export interface DrugsInterface {
     id: number,
     name: string,
-    price: Number,
+    price: number,
     category: string,
+    quantity: number,
+
 
 
 }

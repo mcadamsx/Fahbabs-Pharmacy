@@ -2,78 +2,106 @@
   "users": [
     {
       "id": "e7d7",
+      "firstName": "admin",
+      "lastName": "admin",
+      "username": "admin",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "db3e",
+      "firstName": "Moski",
+      "lastName": "Moski",
       "username": "dispenser",
       "password": "123",
       "role": "dispenser"
     },
     {
-      "id": "e7d7",
-      "username": "admin",
+      "id": "7000",
+      "firstName": "Moski",
+      "lastName": "Moski",
+      "username": "dispenser",
       "password": "123",
-      "role": "admin"
+      "role": "dispenser"
     }
   ],
-
   "medicines": [
     {
       "id": 1,
       "name": "Aspirin",
       "price": 5.99,
-      "category": "Pain Relief"
+      "category": "Pain Relief",
+      "quantity": 50
     },
     {
       "id": 2,
       "name": "Ibuprofen",
       "price": 7.49,
-      "category": "Pain Relief"
+      "category": "Pain Relief",
+      "quantity": 50
     },
     {
       "id": 3,
       "name": "Amoxicillin",
       "price": 12.99,
-      "category": "Antibiotics"
+      "category": "Antibiotics",
+      "quantity": 50
     },
     {
       "id": 4,
       "name": "Loratadine",
       "price": 9.99,
-      "category": "Antihistamines"
+      "category": "Antihistamines",
+      "quantity": 50
     },
     {
       "id": 5,
       "name": "Omeprazole",
       "price": 15.99,
-      "category": "Digestive Health"
+      "category": "Digestive Health",
+      "quantity": 50
     },
     {
       "id": 6,
       "name": "Acetaminophen",
       "price": 6.99,
-      "category": "Pain Relief"
+      "category": "Pain Relief",
+      "quantity": 50
     },
     {
       "id": 7,
       "name": "Simvastatin",
       "price": 18.49,
-      "category": "Cholesterol Management"
+      "category": "Cholesterol Management",
+      "quantity": 50
     },
     {
       "id": 8,
       "name": "Ciprofloxacin",
       "price": 22.99,
-      "category": "Antibiotics"
+      "category": "Antibiotics",
+      "quantity": 50
     },
     {
       "id": 9,
       "name": "Diphenhydramine",
       "price": 8.79,
-      "category": "Allergy Relief"
+      "category": "Allergy Relief",
+      "quantity": 50
     },
     {
       "id": 10,
       "name": "Metformin",
       "price": 11.99,
-      "category": "Diabetes Management"
+      "category": "Diabetes Management",
+      "quantity": 50
+    },
+    {
+      "id": "4104",
+      "category": "Antibiotics",
+      "name": "jkhkjh",
+      "quantity": 889,
+      "price": 988
     }
   ]
 }

@@ -18,4 +18,9 @@ export class AuthServiceService {
       `${environment.endPoint}/users?username=${username}`,
     );
   }
+
+  postUsers(userDetails : Authinterface){
+    return this.http.post(`${environment.endPoint}/users`, userDetails);
+  }
+
 }

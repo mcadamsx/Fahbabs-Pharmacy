@@ -1,17 +1,34 @@
-
-            <tr class="bg-white border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-heading whitespace-nowrap">
-                   {{productList.name}}
-                </th>
-                <td class="px-6 py-4">
-                    {{productList.price}}
-                </td>
-                <td class="px-6 py-4">
-                    {{productList.category}}
-                </td>
-                <td class="px-6 py-4">
-                    {{productList.id}}
-                </td>
-            </tr>
-
-     
+<div class="bg-white mt-5 p-8 shadow-md rounded">
+  <h2 class="text-2xl my-4">Products</h2>
+  <div class="overflow-x-auto h-96 ">
+    <table class="w-full h-10 overflow-hidden text-sm text-left rtl:text-right text-heading">
+      <thead class="sticky text-xs text-heading uppercase bg-accent">
+      <tr>
+        <th scope="col" class="px-6 py-3">Product name</th>
+        <th scope="col" class="px-6 py-3">price</th>
+        <th scope="col" class="px-6 py-3">Category</th>
+        <th scope="col" class="px-6 py-3">Total Quantity</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let products of productsList" class="border max-h-8 overflow-y-auto">
+      <tr class="bg-white border-b-slate-300">
+        <th
+          scope="row"
+          class="px-6 py-4 font-semibold text-heading whitespace-nowrap"
+        >
+          {{ products.name }}
+        </th>
+        <td class="px-6 py-4 text-text">
+          {{ products.price }}
+        </td>
+        <td class="px-6 py-4 text-text">
+          {{ products.category }}
+        </td>
+        <td class="px-6 py-4 text-text">
+          {{ products.id }}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
