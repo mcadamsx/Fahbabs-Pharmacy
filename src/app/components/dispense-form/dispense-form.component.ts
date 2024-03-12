@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgForOf} from "@angular/common";
+import {DrugsInterface} from "../../interface/drugs-interface";
 
 @Component({
   selector: 'app-dispense-form',
@@ -20,19 +21,21 @@ export class DispenseFormComponent {
     category: [""],
     name: [""],
     quantity: [""],
-    price :[""]
+    price :[]
   })
    totalPrice: number = 0
 
-
-  druglist = [{name: "", category: "", quantity: "", price: ""}]
-
+  druglist: any = [{name: "", category: "", quantity: "", price: ""}]
+  number = 0;
 
   dispenseDrug(){
      let AddDrug = {...this.dispenseForm.value}
     // @ts-ignore
 
-      this.druglist.push({name: `${AddDrug.name}`, category: `${AddDrug.category}`, quantity: `Quantity: ${AddDrug.quantity}`, price: `Price: ${AddDrug.price}`})
+      this.druglist.push({name: `${AddDrug.name}`, category: `${AddDrug.category}`, quantity: `Quantity: ${AddDrug.quantity}`, price:  AddDrug.price})
+    // @ts-ignore
+        t
+
 
   }
 }
