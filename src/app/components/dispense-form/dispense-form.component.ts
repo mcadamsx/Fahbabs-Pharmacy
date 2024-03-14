@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgForOf} from "@angular/common";
 import {DrugsInterface} from "../../interface/drugs-interface";
+import {CashierFormComponent} from "../../pages/cashier-form/cashier-form.component";
+import {Authinterface} from "../../interface/authinterface";
+import {DrugsServiceService} from "../../services/drugs-service.service";
 
 @Component({
   selector: 'app-dispense-form',
@@ -9,33 +12,29 @@ import {DrugsInterface} from "../../interface/drugs-interface";
   imports: [
     ReactiveFormsModule,
     NgForOf,
-    FormsModule
+    FormsModule,
+    CashierFormComponent
   ],
   templateUrl: './dispense-form.component.html',
   styleUrl: './dispense-form.component.css'
 })
 export class DispenseFormComponent {
-  constructor(private fb:FormBuilder) {
+  // @ts-ignore
+  @Input()
+  constructor(private fb:FormBuilder, private drugService: DrugsServiceService) {
   }
   dispenseForm = this.fb.group({
     category: [""],
     name: [""],
-    quantity: [""],
+    quantity: [],
     price :[]
   })
-   totalPrice: number = 0
+  // @ts-ignore
+  drugList;
+  submitForm(){
+    const drugCart: any = {...this.dispenseForm.value as Authinterface}
+    this.drugService.addCart(drugCart as any).subscribe((response)=>{
+          this.drugList = response;
+    })}
 
-  druglist: any = [{name: "", category: "", quantity: "", price: ""}]
-  number = 0;
-
-  dispenseDrug(){
-     let AddDrug = {...this.dispenseForm.value}
-    // @ts-ignore
-
-      this.druglist.push({name: `${AddDrug.name}`, category: `${AddDrug.category}`, quantity: `Quantity: ${AddDrug.quantity}`, price:  AddDrug.price})
-    // @ts-ignore
-        t
-
-
-  }
 }

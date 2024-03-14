@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
-import {DrugsInterface} from "../../interface/drugs-interface";
 import {DrugsServiceService} from "../../services/drugs-service.service";
-import {response} from "express";
+import {Location} from "@angular/common";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-add-medicine-form',
@@ -14,7 +14,7 @@ import {response} from "express";
   styleUrl: './add-medicine-form.component.css'
 })
 export class AddMedicineFormComponent {
-  constructor(private fb:FormBuilder, private medService: DrugsServiceService) {
+  constructor(private fb:FormBuilder, private medService: DrugsServiceService, private location: Location, private router:Router) {
   }
   addMedicine = this.fb.group({
     category: [""],
@@ -28,6 +28,6 @@ export class AddMedicineFormComponent {
     this.medService.postMedicine(postMed as any).subscribe((response)=>{
       console.log(response)
     })
-
   }
+
 }

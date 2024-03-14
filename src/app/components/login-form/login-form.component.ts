@@ -31,7 +31,10 @@ export class LoginFormComponent {
         this.router.navigate(["dashboard"]);
       }
       if(list.length > 0 && list[0].username === username && list[0].role === "dispenser"&& list[0].password === password ){
-        this.router.navigate(["dispenser"]);
+        this.router.navigate(["dispenserDashboard"]);
+      }
+      if(list.length > 0 && list[0].username === username && list[0].role === "cashier"&& list[0].password === password ){
+        this.router.navigate(["cashierPage"]);
       }
       else{
         console.error("not found")

@@ -5,7 +5,7 @@
     <nav class="h-3/6 mb-8 ">
       <ul class="text-gray-600  lg:mx-0">
 
-        <li routerLinkActive="active" routerLink="/records" class="mb-6 flex items-center cursor-pointer">
+        <li routerLinkActive="active" routerLink="/dispenserProducts" class="mb-6 flex items-center cursor-pointer">
           <svg class="mx-4 lg:mx-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path routerLinkActive="active" d="M21 10V2H3V14.1C3 14.81 3.14001 15.4 3.42001 15.86C3.88001 16.62 4.72 17.01 5.91 17.01H18.1C20 17.01 21 16.01 21 14.11" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path routerLinkActive="active" d="M2 2H22" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -13,8 +13,8 @@
             <path routerLinkActive="active" d="M16 22L12 20" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path routerLinkActive="active" d="M7.5 11L10.65 8.37C10.9 8.16 11.23 8.22 11.4 8.5L12.6 10.5C12.77 10.78 13.1 10.83 13.35 10.63L16.5 8" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <a class="ml-4 text-sm hover:text-blue-600 ease-out duration-700 transition-delay-100 hidden lg:block">Purchase</a></li>
-        <li routerLinkActive="active" routerLink="/cashierPage" class="mb-6 flex items-center cursor-pointer">
+          <a class="ml-4 text-sm hover:text-blue-600 ease-out duration-700 transition-delay-100 hidden lg:block">Products</a></li>
+        <li routerLinkActive="active" routerLink="/dispenserDashboard" class="mb-6 flex items-center cursor-pointer">
           <svg class="mx-4 lg:mx-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path routerLinkActive="active" d="M21 10V2H3V14.1C3 14.81 3.14001 15.4 3.42001 15.86C3.88001 16.62 4.72 17.01 5.91 17.01H18.1C20 17.01 21 16.01 21 14.11" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path routerLinkActive="active" d="M2 2H22" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,21 +22,17 @@
             <path routerLinkActive="active" d="M16 22L12 20" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path routerLinkActive="active" d="M7.5 11L10.65 8.37C10.9 8.16 11.23 8.22 11.4 8.5L12.6 10.5C12.77 10.78 13.1 10.83 13.35 10.63L16.5 8" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <a class="ml-4 text-sm hover:text-blue-600 ease-out duration-700 transition-delay-100 hidden lg:block">Cashier</a></li>
+          <a class="ml-4 text-sm hover:text-blue-600 ease-out duration-700 transition-delay-100 hidden lg:block">Dispense</a></li>
       </ul>
     </nav>
-
     <div class="absolute bottom-6 ">
       <a class="">
-
       </a>
-      <a  class="cursor-pointer" (click)="logout()">Logout</a>
+      <a class="cursor-pointer" (click)="logout()">Logout</a>
     </div>
-
   </div>
-
-  <div class="lg:w-9/12 my-16 mx-auto">
-    <app-records-table></app-records-table>
+  <div class="lg:w-10/12 my-16 mx-auto">
+   <app-dispenser-forms></app-dispenser-forms>
 
   </div>
 </div>

@@ -1,51 +1,9 @@
 <div class="flex bg-gray-50  ">
   <app-sidebar class="lg:w-2/12"></app-sidebar>
   <div class="lg:w-10/12 ">
-
     <app-searchComponent></app-searchComponent>
     <div class="w-10/12 mx-auto mb-8 lg:w-11/12">
-
-
       <div class="flex justify-between gap-5 mt-10">
-        <div class="p-6 bg-white rounded-lg shadow-md w-3/12 cursor-pointer">
-          <div class="flex items-center gap-5 mb-5">
-            <div
-              class="max-w-full w-[50px] h-[50px] bg-yellow border-none rounded-full flex items-center justify-center">
-              <img src="../../../assets/stock.png" class="w-[25px]" alt="stock-image">
-            </div>
-            <h5 class="mb-2 text-lg font-semibold tracking-tight text-heading">
-              Total Stock Quantity
-            </h5>
-          </div>
-          <p
-            class="mb-3 font-bold text-3xl text-center text-text"
-          >
-            GH 0.00
-          </p>
-          <button class="text-sm border-none w-[100px] text-center text-green bg-none hover:text-lime-400">show
-            details
-          </button>
-        </div>
-
-        <div class="p-6 bg-white rounded-lg shadow-md w-3/12 cursor-pointer">
-          <div class="flex items-center gap-5 mb-5">
-            <div
-              class="max-w-full w-[50px] h-[50px] bg-secondary border-none rounded-full flex items-center justify-center">
-              <img src="../../../assets/sales.png" class="w-[25px]" alt="sales-image">
-            </div>
-            <h5 class="mb-2 text-lg font-semibold tracking-tight text-heading">
-              Total Sales Amount
-            </h5>
-          </div>
-          <p
-            class="mb-3 font-bold text-3xl text-center text-text"
-          >
-            GH 0.00
-          </p>
-          <button class="text-sm border-none w-[100px] text-center text-green bg-none hover:text-lime-400">show
-            details
-          </button>
-        </div>
         <div class="p-6 bg-white rounded-lg shadow-md w-3/12 cursor-pointer">
           <div class="flex items-center gap-5 mb-5">
             <div class="max-w-full w-[50px] h-[50px] bg-red border-none rounded-full flex items-center justify-center">
@@ -58,7 +16,7 @@
           <p
             class="mb-3 font-bold text-3xl text-center text-text"
           >
-            GH 0.00
+            0
           </p>
           <button class="text-sm border-none w-[100px] text-center text-green bg-none hover:text-lime-400">show
             details
@@ -84,8 +42,50 @@
             details
           </button>
         </div>
+
+        <div class="p-6 bg-white rounded-lg shadow-md w-3/12 cursor-pointer">
+          <div class="flex items-center gap-5 mb-5">
+            <div
+              class="max-w-full w-[50px] h-[50px] bg-yellow border-none rounded-full flex items-center justify-center">
+              <img src="../../../assets/stock.png" class="w-[25px]" alt="stock-image">
+            </div>
+            <h5 class="mb-2 text-lg font-semibold tracking-tight text-heading">
+              Total Stock Quantity
+            </h5>
+          </div>
+          <p
+            class="mb-3 font-bold text-3xl text-center text-text"
+          >
+           {{totalQunatity}}
+          </p>
+          <button class="text-sm border-none w-[100px] text-center text-green bg-none hover:text-lime-400">show
+            details
+          </button>
+        </div>
+
+        <div class="p-6 bg-white rounded-lg shadow-md w-3/12 cursor-pointer">
+          <div class="flex items-center gap-5 mb-5">
+            <div
+              class="max-w-full w-[50px] h-[50px] bg-secondary border-none rounded-full flex items-center justify-center">
+              <img src="../../../assets/sales.png" class="w-[25px]" alt="sales-image">
+            </div>
+            <h5 class="mb-2 text-lg font-semibold tracking-tight text-heading">
+              Total Sales Amount
+            </h5>
+          </div>
+          <p
+            class="mb-3 font-bold text-3xl text-center text-text"
+          >
+            GH {{totalSalesAmount}}
+          </p>
+          <button class="text-sm border-none w-[100px] text-center text-green bg-none hover:text-lime-400">show
+            details
+          </button>
+        </div>
       </div>
-      <app-dashboard-table></app-dashboard-table>
+      <div class="max-h-4/6 h-4/6">
+        <app-dashboard-table></app-dashboard-table>
+      </div>
     </div>
 
   </div>

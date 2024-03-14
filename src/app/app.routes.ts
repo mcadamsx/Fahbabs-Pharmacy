@@ -8,7 +8,9 @@ import {DispenseComponent} from "./pages/dispense/dispense.component";
 import {DashboardComponent} from "./pages/dashboard/dashboard.component";
 import {AddUserComponent} from "./pages/add-user/add-user.component";
 import {AddMedicineComponent} from "./pages/add-medicine/add-medicine.component";
-import {DispenserPageComponent} from "./pages/dispenser-page/dispenser-page.component";
+import {CashierPageComponent} from "./pages/cashier-page/cashier-page.component";
+import {DispenserPageComponent} from "./pages/dispenser-page/cashier-page.component";
+import {DispenserProductsPageComponent} from "./pages/dispenser-products-page/dispenser-products-page.component";
 
 export const routes: Routes = [
   {
@@ -16,6 +18,7 @@ export const routes: Routes = [
     component: LoginComponent,
     title: ""
   },
+
   {
     path: "home",
     component: HomeComponent,
@@ -43,7 +46,7 @@ export const routes: Routes = [
   {
     path: "dispense",
     component: DispenseComponent,
-    title: "remainders"
+    title: "dispense"
   },
   {
     path: "addUser",
@@ -56,8 +59,16 @@ export const routes: Routes = [
     title: "add-Medicine"
   },
   {
-    path: "dispenser",
+    path: "dispenserDashboard",
     component: DispenserPageComponent
+  },
+  {
+    path: "cashierPage",
+    component: CashierPageComponent
+  },
+  {
+    path: 'dispenserProducts',
+    component: DispenserProductsPageComponent
   },
   {
     path: '', redirectTo: 'login', pathMatch: "full"}

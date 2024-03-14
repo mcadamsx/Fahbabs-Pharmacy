@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DispenserPageComponent } from './dispenser-page.component';
+import { RecordsTableComponent } from './records-table.component';
 
-describe('DispenserPageComponent', () => {
-  let component: DispenserPageComponent;
-  let fixture: ComponentFixture<DispenserPageComponent>;
+describe('RecordsTableComponent', () => {
+  let component: RecordsTableComponent;
+  let fixture: ComponentFixture<RecordsTableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DispenserPageComponent]
+      imports: [RecordsTableComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DispenserPageComponent);
+    fixture = TestBed.createComponent(RecordsTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

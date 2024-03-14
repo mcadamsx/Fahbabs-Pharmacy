@@ -1,6 +1,6 @@
 
 <div class="sticky h-screen w-full bg-white py-8 lg:pl-8">
-  <h3 class=" text-blue-600 h-24 text-sm hidden lg:text-xl lg:font-bold lg:block ">FAHBABS PHARMACY</h3>
+  <h3 class=" text-primary h-24 text-sm hidden lg:text-xl lg:font-bold lg:block ">FAHBABS PHARMACY</h3>
   <nav class="h-3/6 mb-8 ">
     <ul class="text-gray-600  lg:mx-0">
       <li routerLinkActive="active" routerLink="/dashboard" class="mb-6  flex items-center ease-in duration-100 cursor-pointer ">
@@ -27,12 +27,6 @@
           <path routerLinkActive="active" d="M7.5 11L10.65 8.37C10.9 8.16 11.23 8.22 11.4 8.5L12.6 10.5C12.77 10.78 13.1 10.83 13.35 10.63L16.5 8" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <a class="ml-4 text-sm hover:text-blue-600 ease-out duration-700 transition-delay-100 hidden lg:block">Purchase</a></li>
-      <li routerLinkActive="active" routerLink="/records" class="mb-6 flex items-center cursor-pointer">
-        <svg class="mx-4 lg:mx-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path routerLinkActive="active" d="M11.5 2C16.75 2 21 6.25 21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 7.8 4.11 4.6 7.2 3.03" stroke="#656565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path routerLinkActive="active" d="M22 22L20 20" stroke="#656565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <a  class="ml-4 text-sm hover:text-blue-600 ease-out duration-700 transition-delay-100 hidden lg:block">Records</a></li>
       <li routerLinkActive="active" routerLink="/dispense" class="mb-6 flex items-center cursor-pointer">
         <svg class="mx-4 lg:mx-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path routerLinkActive="active" d="M18.02 11.8002V8.91016C18.02 5.61016 15.32 2.91016 12.02 2.91016C8.71 2.91016 6.02 5.60016 6.02 8.91016V11.8002C6.02 12.4102 5.76 13.3402 5.45 13.8602L4.3 15.7702C3.59 16.9502 4.08 18.2602 5.38 18.7002C9.69 20.1402 14.34 20.1402 18.65 18.7002C19.86 18.3002 20.39 16.8702 19.73 15.7702" stroke="#656565" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -61,7 +55,7 @@
     <a class="">
 
     </a>
-    <a ><img src="assets/user.png" alt="User Image" class="w-1/12 rounded-xl " ></a>
+    <a  class="cursor-pointer" (click)="logout()">Logout</a>
   </div>
 
 </div>

@@ -1,29 +1,32 @@
 {
+  "cart": [],
+  "records": [],
   "users": [
     {
       "id": "e7d7",
       "firstName": "admin",
       "lastName": "admin",
       "username": "admin",
-      "password": "admin",
+      "password": "123",
       "role": "admin"
     },
     {
       "id": "db3e",
-      "firstName": "Moski",
-      "lastName": "Moski",
+      "firstName": "dispenser",
+      "lastName": "dispenser",
       "username": "dispenser",
       "password": "123",
       "role": "dispenser"
     },
     {
-      "id": "7000",
-      "firstName": "Moski",
-      "lastName": "Moski",
-      "username": "dispenser",
+      "id": "db3e",
+      "firstName": "cashier",
+      "lastName": "cashier",
+      "username": "cashier",
       "password": "123",
-      "role": "dispenser"
-    }
+      "role": "cashier"
+    },
+
   ],
   "medicines": [
     {
@@ -95,13 +98,6 @@
       "price": 11.99,
       "category": "Diabetes Management",
       "quantity": 50
-    },
-    {
-      "id": "4104",
-      "category": "Antibiotics",
-      "name": "jkhkjh",
-      "quantity": 889,
-      "price": 988
     }
   ]
 }
