@@ -7,7 +7,7 @@
       "firstName": "admin",
       "lastName": "admin",
       "username": "admin",
-      "password": "123",
+      "password": "admin",
       "role": "admin"
     },
     {
@@ -25,8 +25,7 @@
       "username": "cashier",
       "password": "123",
       "role": "cashier"
-    },
-
+    }
   ],
   "medicines": [
     {
