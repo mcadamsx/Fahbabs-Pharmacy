@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NgForOf} from "@angular/common";
 import {DrugsInterface} from "../../interface/drugs-interface";
 import {DrugsServiceService} from "../../services/drugs-service.service";
@@ -12,10 +12,9 @@ import {DrugsServiceService} from "../../services/drugs-service.service";
   templateUrl: './dispenser-products.component.html',
   styleUrl: './dispenser-products.component.css'
 })
-export class DispenserProductComponent {
+export class DispenserProductComponent implements OnInit{
 
   productsList: DrugsInterface [] = []
-
 
   constructor(private ds:DrugsServiceService){}
 
@@ -25,5 +24,4 @@ export class DispenserProductComponent {
       console.log(this.productsList)
     })
   }
-
 }

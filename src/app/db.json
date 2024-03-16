@@ -1,6 +1,14 @@
 {
   "cart": [],
-  "records": [],
+  "records": [
+    {
+      "id": "e265",
+      "category": "Cholesterol Management",
+      "name": "fdkjdf",
+      "quantity": 88,
+      "price": 12
+    }
+  ],
   "users": [
     {
       "id": "e7d7",
@@ -25,6 +33,30 @@
       "username": "cashier",
       "password": "123",
       "role": "cashier"
+    },
+    {
+      "id": "86e4",
+      "firstName": "cashier",
+      "lastName": "cashier",
+      "username": "cashier",
+      "password": "123",
+      "role": "cashier"
+    },
+    {
+      "id": "87cc",
+      "firstName": "kofi",
+      "lastName": "kofi",
+      "username": "dispenser",
+      "password": "123",
+      "role": ""
+    },
+    {
+      "id": "8b5b",
+      "firstName": "kofi",
+      "lastName": "kofi",
+      "username": "dispenser",
+      "password": "123",
+      "role": "dispenser"
     }
   ],
   "medicines": [
