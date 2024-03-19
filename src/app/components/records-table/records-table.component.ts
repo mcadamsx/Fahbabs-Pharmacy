@@ -21,8 +21,4 @@ export class RecordsTableComponent implements OnInit{
       this.productList = res
     })
   }
-
-
-
-
 }

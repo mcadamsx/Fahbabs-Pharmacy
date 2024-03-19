@@ -20,8 +20,10 @@ import {DrugsServiceService} from "../../services/drugs-service.service";
 export class DashboardComponent implements OnInit{
   totalQunatity: number = 0;
   totalSalesAmount: number = 0;
+  totalPurchaseQunatity: number = 0;
+  totalPurchaseAmount: number = 0;
   drugList : DrugsInterface[]=[];
-
+  purchaseList : DrugsInterface [] = []
 
   constructor(private drugservice:DrugsServiceService) {
   }
@@ -30,10 +32,16 @@ export class DashboardComponent implements OnInit{
       this.drugList = response
       this.calculateTotal()
     })
+    this.drugservice.getRecords().subscribe((response)=>{
+      this.purchaseList = response
+      console.log(this.purchaseList)
+      this.calculateTotal()
+    })
   }
-
   calculateTotal(): void {
     this.totalQunatity = this.drugList.reduce((acc, drugs) => acc + drugs.quantity, 0);
     this.totalSalesAmount = this.drugList.reduce((acc, drugs) => acc + drugs.price, 0);
+    this.totalPurchaseQunatity = this.purchaseList.reduce((acc, drugs) => acc + drugs.quantity, 0);
+    this.totalPurchaseAmount = this.purchaseList.reduce((acc, drugs) => acc + drugs.price, 0);
   }
 }

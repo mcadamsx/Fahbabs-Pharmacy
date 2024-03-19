@@ -9,7 +9,7 @@ import {DashboardComponent} from "./pages/dashboard/dashboard.component";
 import {AddUserComponent} from "./pages/add-user/add-user.component";
 import {AddMedicineComponent} from "./pages/add-medicine/add-medicine.component";
 import {CashierPageComponent} from "./pages/cashier-page/cashier-page.component";
-import {DispenserPageComponent} from "./pages/dispenser-page/cashier-page.component";
+import {DispenserPageComponent} from "./pages/dispenser-page/dispenser-page.component";
 import {DispenserProductsPageComponent} from "./pages/dispenser-products-page/dispenser-products-page.component";
 
 export const routes: Routes = [

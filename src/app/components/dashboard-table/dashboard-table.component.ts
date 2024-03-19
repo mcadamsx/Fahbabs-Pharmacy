@@ -20,7 +20,6 @@ export class DashboardTableComponent implements  OnInit{
   ngOnInit(): void {
     this.ds.getMedicine().subscribe((response)=>{
       this.productsList = response
-      console.log(this.productsList)
     })
   }
 

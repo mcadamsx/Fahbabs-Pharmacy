@@ -2,11 +2,18 @@
   "cart": [],
   "records": [
     {
-      "id": "e265",
-      "category": "Cholesterol Management",
-      "name": "fdkjdf",
-      "quantity": 88,
-      "price": 12
+      "id": "ef94",
+      "category": "Pain Relief",
+      "name": "paracetamol ",
+      "quantity": 10,
+      "price": 20
+    },
+    {
+      "id": "1ff4",
+      "category": "Pain Relief",
+      "name": "Aspirine",
+      "quantity": 10,
+      "price": 50
     }
   ],
   "users": [
@@ -15,7 +22,7 @@
       "firstName": "admin",
       "lastName": "admin",
       "username": "admin",
-      "password": "admin",
+      "password": "123",
       "role": "admin"
     },
     {
